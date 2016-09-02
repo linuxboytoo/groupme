@@ -19,7 +19,7 @@ module GroupMe
     # @param id [String, Integer] ID of the bot
     # @param text [String] Text to send to the group
     # @option options [String] :picture_url Picture URL from image service
-    def bot_post(id, text, options = {})
+    def bot_post(id, text, options = {}, attachments = {})
       data = {
         :bot_id => id,
         :text => text
