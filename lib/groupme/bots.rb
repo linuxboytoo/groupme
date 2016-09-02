@@ -25,6 +25,7 @@ module GroupMe
         :text => text
       }
       data[:options] = options if options.any?
+      data[:attachments] = attachments if attachments.any?
       post('/bots/post', data).status == 202
     end
 
